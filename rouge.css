@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+
+@font-face {
+    font-family: rouge;
+    src: url('fonte/Rouge-Regular.ttf');
+}
+:root{
+    --cor01:#A8340A;
+    --cor02:#B31E0B;
+    --cor03:#9B111E;
+    --cor04:#B30B6F;
+    --cor05:#a85bac;
+    --paleta01: #fc46aa;
+    --paleta02: #e11584;
+    --paleta03: #ff1694;
+
+}
+html,body{
+    width: 516px ;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor01);
+}
+header{
+    width: 100vw;
+     background-color: var(--cor02);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+header > h1{
+    position: relative;
+    left: 60vw;
+    font-family: rouge;
+    color: gold;
+    font-size: 56px;
+    letter-spacing: 2px;
+    width: 100vw;
+}
+header > p{
+    position: relative;
+    left: 40%;
+    color: white;
+    font-size: 22px;
+    width: 80%;
+}
+.slogan{
+    position: relative;
+    left: 260px;
+}
+.logo > img{
+    position: relative;
+    bottom: 225px;
+    left: 50px;
+    width: 25%;
+    border-radius: 30px;
+}
+.rouge:hover{
+    transition: 2s;
+    width: 40vw;
+    border: 3px solid gold;    
+}
+
+ul{
+    
+    position: relative;
+    bottom: 200px;
+}
+.menus{
+    background-color: var(--cor05);
+    display: flex; 
+    justify-content: space-around;
+}
+.menus > li{
+    list-style-type: none;
+    font-size: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.menus>li>a{
+
+    text-decoration: none;
+    color: gold;
+
+}
+.item01:hover{
+        background-color: var(--paleta01);
+        border-radius: 5px;
+        margin: 5px;
+        transition: 0.5s;
+}
+.item02:hover{
+    background-color: var(--paleta02);
+    border-radius: 5px;
+    margin: 5px;
+    transition: 0.5s;
+}
+.item03:hover{
+    background-color: var(--paleta03);
+    border-radius: 5px;
+    margin: 5px;
+    transition: 0.5s;
+}
+main{
+    position: relative;
+    bottom: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    width:90%;
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+main > img{
+    width: 80%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+@media (min-width:600px){
+    header{
+        text-align: center;
+    }
+}
